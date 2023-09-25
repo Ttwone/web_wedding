@@ -1,14 +1,243 @@
-body {
-    font-size: 1.2rem;
-    font-family: 'Work Sans', sans-serif;
-    min-height: 4000px;
+  :root {
+    --cream: #f1227d;
+    --bg: #0a0a0a;
+    --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    --shadow1: 0 0 5px rgba(0, 0, 0, 0.5);
   }
   
+  body {
+    font-size: 1, 2rem;
+    font-family: "Great Vibes", cursive;
+    min-height: 2000px;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/minahome.jpg);
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+  }
+  
+  .mynavbar {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    backdrop-filter: blur(1px);
+  }
+  
+  .mynavbar .offcanvas {
+    height: 100vh;
+  }
+  
+  .mynavbar .navbar-brand,
+  .mynavbar .offcanvas-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 4rem;
+  }
+  
+  .mynavbar .nav-link {
+    font-family: "Croissant One", cursive;
+    font-size: 0, 5rem;
+    text-transform: uppercase;
+  }
+  
+  .hero {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .hero h1,
+  h4,
+  p {
+    text-shadow: var(--shadow);
+  }
+  
+  .hero p {
+    font-size: 2rem;
+  }
+  .hero h4 {
+    font-size: 4rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero a {
+    color: white;
+    background-color: var(--cream);
+    box-shadow: var(--shadow);
+  }
+  
+  .hero a:hover {
+    background-color: var(--cream);
+    color: var(--bg);
+  }
+  
+  .home {
+    background-image: url(img/floral2.png);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+  }
+  
+  .home .heart {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: var(--shadow1);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(65px);
+  }
+  
+  .home .heart i {
+    margin: auto;
+    color: var(--cream);
+  }
+  
+  .home .couple p,
+  h3 {
+    color: #0a0a0a;
+    font-weight: bold;
+  }
+  
+  .home p {
+    font-size: 2rem;
+    color: #666;
+  }
+  .home h3 {
+    font-size: 3rem;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+  .home h2 {
+    font-size: 6rem;
+    color: var(--cream);
+    font-weight: bold;
+  }
+  
+  .home .couple {
+    margin-top: 100px;
+  }
+  .home .couple img {
+    width: 100%;
+  }
+  .home .couple h3 {
+    font-size: 2, 4rem;
+    color: var(--cream);
+  }
+  
+  .info {
+    font-family: "Croissant One", cursive;
+    background-color: #0a0a0a;
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+  }
+  
+  .info h2 {
+    color: var(--cream);
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  
+  .info .alamat {
+    font-size: 1, 1rem;
+  }
+  
+  .info .description {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .info .card {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    border: 1px solid #999;
+  }
+  
+  .info .card-header {
+    border-bottom: 1px solid #999;
+    text-transform: uppercase;
+    letter-spacing: 0, 1rem;
+  }
+  
+  .info .card-footer {
+    border-top: 1px solid #999;
+    font-size: 0, 9rem;
+    font-weight: 300;
+  }
+  
+  .info .card-body {
+    font-size: 1rem;
+  }
+  
+  .sticky-top {
+    overflow: hidden;
+  }
+  
+  /* media query */
+  /* extra large */
+  @media (max-width: 1200px) {
+    .home .heart {
+      transform: translateX(-50%) translateY(45px);
+    }
+  }
+  /* laptop */
+  @media (max-width: 992px) {
+    html {
+      font-size: 75%;
+    }
+    .simply-countdown > .simply-section {
+      padding: 70px;
+    }
+    .home .heart {
+      display: none;
+    }
+  }
+  /* tablet */
+  @media (max-width: 768px) {
+    html {
+      font-size: 65%;
+    }
+    .simply-countdown > .simply-section {
+      padding: 60px;
+      margin: 5px;
+    }
+  
+    .mynavbar .nav-link {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  /* mobile */
+  @media (max-width: 576px) {
+    html {
+      font-size: 60%;
+    }
+    .simply-countdown > .simply-section {
+      padding: 45px;
+      margin: 3px;
+    }
+  }
+
   footer {
     text-align: center;
       padding: 3rem;
       background-color:#333;
       color: rgb(247, 0, 255);
+      font-family: 'Work Sans', sans-serif;
+      font-weight: bold;
+      font-size: large;
     }
     
     footer a {
