@@ -230,6 +230,32 @@
     }
   }
 
+  .gift h2 {
+    color: var(--cream);
+    font-family: 'Great Vibes';
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  .gift {
+    color:var(--cream);
+    font-family: 'Scramento';
+    font-size: 1rem;
+    font-weight: bold ;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+.gift span{
+text-transform: uppercase;
+color: #666;
+font-size: 0.9rem;
+letter-spacing: 1px;
+display: block;
+margin-bottom: 1rem;
+}
+.gift p{
+    font-size: 1rem;
+    font-weight: 300;
+}
   footer {
     text-align: center;
       padding: 3rem;

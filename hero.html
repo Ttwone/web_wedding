@@ -23,7 +23,8 @@
     <!-- bt icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -74,7 +75,7 @@
               <a class="nav-link" href="#home">Home</a>
               <a class="nav-link" href="#info">Info</a>
               <a class="nav-link" href="#rsvp">RSVP</a>
-              <a class="nav-link" href="#gifts">Gifts</a>
+              <a class="nav-link" href="#gift">Gifts</a>
             </div>
         </div>
       </div>
@@ -85,7 +86,7 @@
     <section id="home" class="home">
 
 <div class="container">
-  <div class="row-justify-content-center">
+  <div class="row-justify-content-center" data-aos="zoom-in" data-aos-duration="2000">
     <div class="col md-8 text-center">
 <h2>Acara Pernikahan</h2>
 <h3>Diselenggarakan pada 13 Mei 2037 Di Depok, Jawa Barat.</h3>
@@ -93,7 +94,7 @@
     </div>
   </div>
   <div class="row couple">
-<div class="col-lg-6">
+<div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
 <div class="row">
   <div class="col-8 text-end">
     <h3>Kim Iq-Bal</h3>
@@ -105,8 +106,8 @@
   </div>
 </div>
 </div>
-<span class="heart"><i class="bi bi-suit-heart-fill"></i></span>
-<div class="col-lg-6">
+<div class="heart"><i class="bi bi-suit-heart-fill"></i></div>
+<div class="col-lg-6" data-aos="fade-left" data-aos-duration="2000">
   <div class="row">
     <div class="col-4">
       <img src="img/mina.jpg" alt="Myoui Mina" class="img-responsive rounded-circle">
@@ -124,7 +125,8 @@
 
     <section id="info" class="info">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="zoom-out"
+        data-aos-duration="1000">
           <div class="col-md-8-col-10 text-center">
             <h2>Informasi Acara</h2>
             <p class="alamat">Alamat : Balairung Hotel Bumi Wiyata <br> Jl. Margonda No.281, Kemiri Muka, Kecamatan Beji, Kota Depok</p>
@@ -134,7 +136,7 @@
           </div>
         </div>
         <div class="row justify-content-center mt-4">
-          <div class="col-md-5 col-10">
+          <div class="col-md-5 col-10" data-aos="fade-right">
             <div class="card text-center text-bg-light">
               <div class="card-header">
                 Akad Nikah
@@ -158,7 +160,7 @@ Diharapkan untuk tetap kondusif disaat acara akad nikah berlangsung <br> dan jik
             </div>
           </div>
         </div>
-          <div class="col-md-5 col-10">
+          <div class="col-md-5 col-10" data-aos="fade-left">
             <div class="card text-center text-bg-light">
               <div class="card-header">
                 Resepsi
@@ -185,8 +187,48 @@ Diharapkan untuk tetap kondusif disaat acara akad nikah berlangsung <br> dan jik
       </div>
     </section>
 
-    <footer>
+    <section id="gift" class="gift">
       <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-8 col-10 text-center"  data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="200"
+              data-aos-offset="0">
+                  <span>ugkapan tanda kasih</span>
+                  <h2>Memberikan Hadiah</h2>
+                  <p>terima kasih sudah </p>
+              </div>
+          <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+              <ul class="list-group">
+                  <li class="list-group-item"  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="300"
+                  data-aos-offset="0">
+                      <div class="fw-bold">BCA</div>
+                      233837287 - iqbal
+
+                  </li>
+                  <li class="list-group-item"  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="400"
+                  data-aos-offset="0">
+                      <div class="fw-bold">BCA</div>
+                      988766886 - mina
+
+                  </li>
+                </ul>
+          </div>
+          </div>
+      </div>
+      </div>
+  </section>
+
+    <footer>
+      <div class="container"  data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0">
         <div class="row">
           <div>
             <small class="block">&copy; 2023 THEJAWIRS Wedding. All Rights Reserved.</small>
@@ -227,4 +269,7 @@ Diharapkan untuk tetap kondusif disaat acara akad nikah berlangsung <br> dan jik
 
 
   </body>
+  <script>   
+    AOS.init(); 
+</script>
 </html>
